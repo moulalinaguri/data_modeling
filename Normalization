@@ -1,0 +1,14 @@
+Normalization in SQL/RDBMS
+
+What is Normalization?
+Data Redundancy -> data duplication
+
+Different levels of Normalization (Different Normal Forms):
+1NF - First Normal Form
+2NF
+3NF
+4NF
+BCNF - Boyce-Codd Normal Form
+5NF
+6NF
+
