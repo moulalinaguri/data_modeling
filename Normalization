@@ -46,3 +46,10 @@ Transitive Dependency:
 Lets say you have a table T which has 3 columns namely A, B, and C
 If A is functionally depends on B and B is functionally depends on C then we can say that A is functionally dependent on C.
 
+
+Different Anomolies:
+--------------------
+Insertion Anomoly
+Deletion Anomoly
+Updation Anomoly
+
