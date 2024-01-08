@@ -53,3 +53,44 @@ Insertion Anomoly
 Deletion Anomoly
 Updation Anomoly
 
+Fact Table and Dimention Table:
+-------------------------------
+Fact Table: Actual business data
+Measures - Number, Value
+It contains measurements, facts or metrics of the attributes
+Hold no meaning in itself
+Numeric and quantifiable
+Created or loaded after dimentions are loaded
+Primary key is a new column identifying the unique row, references the tables with foreign key
+
+Dimention Tables: Lokkup data
+Gives context to facts, holds attributes for the facts
+Created or loaded before facts are loaded
+Primary key is referenced by fact tables.
+Dimention - Context to fact table
+
+star schema and snowflake schema:
+---------------------------------
+Normalization
+
+formation of fact table in middle and dimentions connected to fact in star shape.
+
+If dimetion table extends furthur and connect to more dimention tables then it forms a snowflake shape
+
+Galaxy Schema (Bridge schema) - Common dimention tables
+More than one fcat table and dimention tables are connected to one or more fact tables.
+
+Slowly changing Dimention:
+--------------------------
+A Slowly Changing Dimention (SCD) is a dimention that stores and manages both current and historical data over time in a data warehouse.
+
+SCD Type 0 - Ignore any changes and audit the changes
+SCD Type 1 - Overwrite the changes - Null values, At later point
+*SCD Type 2 - History will be added as a new Row (StartDate, EndDate, and IsCurrent)
+SCD Type 3 - History will be added as a new Column (Previous value) - Only allow last version of the history
+SCD Type 4 - A new dimention will be added (Move rapidly changing column to new dimention)
+SCD Type 6 - Combination of Type 21 Type 2, and Type 3 (1+2+3=6)
+
+
+
+
